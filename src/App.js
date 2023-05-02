@@ -11,6 +11,11 @@ export default class App extends Component {
       email: '',
       password: ''
     }
+    this.changeFullName = this.changeFullName.bind(this);
+    this.changeEmail = this.changeEmail.bind(this);
+    this.changeUsername = this.changeUsername.bind(this);
+    this.changePassword = this.changePassword.bind(this);
+
   }
 
   changeFullName(event) {
@@ -18,11 +23,30 @@ export default class App extends Component {
       fullName: event.target.value
     })
   }
+
+  changeUsername(event) {
+    this.setState({
+      username: event.target.value
+    })
+  }
+
+    changeEmail(event) {
+      this.setState({
+        email: event.target.value
+      })
+    }
+
+    changePassword(event) {
+      this.setState({
+        password: event.target.value
+      })
+    }
+
   render() {
     return (
       <div className="container" style={{ marginTop: '120px'}}>
         <div className="form-div">
-            <form>
+            <form onSubmit={this.onSubmit}>
               <input 
                 type="text"
                 placeholder='Full Name' 

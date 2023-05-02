@@ -18,9 +18,6 @@ router.post('/signup', (req, res) => {
         })
 });
 
-router.get('/signin', (req, res) => {
-    
-})
 
 
 module.exports = router;
