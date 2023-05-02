@@ -15,6 +15,7 @@ ___________
 
 ### Photos of project:
 ![](/public/mern_signup.png)
+![](/public/mern_signup1.gif)
 ### Apps used:
 
 ### Coding styles I used:
